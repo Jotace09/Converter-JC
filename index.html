@@ -23,11 +23,11 @@
 
          <select>
 
-            <option>R$ Real</option>
-            <option>US$ Dólar</option>
-            <option>€ Euro</option>
-            <option>£ Libra</option>
-            <option>₿ Bitcoin</option>
+            <option value="real">R$ Real</option>
+            <option value="dolar">US$ Dólar</option>
+            <option value="euro">€ Euro</option>
+            <option value="libra">£ Libra</option>
+         
 
          </select>
 
@@ -37,13 +37,13 @@
 
          converter <b>para</b>
 
-         <select>
+         <select class="currency-select">
 
-            <option>R$ Real</option>
-            <option>US$ Dólar</option>
-            <option>€ Euro</option>
-            <option>£ Libra</option>
-            <option>₿ Bitcoin</option>
+            <option value="real">R$ Real</option>
+            <option value="dolar">US$ Dólar</option>
+            <option value="euro">€ Euro</option>
+            <option value="libra">£ Libra</option>
+       
 
          </select>
 
@@ -52,24 +52,24 @@
       <label>
 
          Valor
-         <input placeholder="10.000">
+         <input class="input-currency-value" placeholder="10.000">
 
       </label>
 
-      <button> converter</button>
+      <button  class="convert-button"> converter</button>
 
       <section>
          <div class="currency-box">
          <img src="./assets/real.png" alt="Brazil">
          <p class="currency"> Real </p>
-         <p class="currency-value"> R$ 10.000</p>
+         <p class="currency-value-to-convert"> R$ 10.000</p>
       </div>
 
       <img class="arrow" src="./assets/seta.png" alt="seta">
 
       <div class="currency-box" >
-         <img src="./assets/dolar.png" alt="USA">
-         <p class="currency"> Dólar </p>
+         <img class="currency-img" src="./assets/dolar.png" alt="USA">
+         <p class="currency" id="currency-name"> Dólar </p>
          <p class="currency-value">US$ 10.000 </p>
       </div>
 
@@ -79,5 +79,5 @@
    </main>
 
 </body>
-
+<script src="./scripts.js"></script>
 </html>
